@@ -30,15 +30,4 @@ condicionar transiciones (trigger [guard] / effect
 
 
 
-    09) En el archivo tdse-tp1_00-system.md, editar y modificar su contenido:
-        Enunciar la tabla de Estados y Excitaciones del modelo System (un solo sistema) necesarios para describir el
-        comportamiento del módulo de código C del tipo temporizado (Update by Time Code, period = 1mS) para “procesar”,
-        necesario para la implementación referida en el TP1 – Actividad 00 – Paso 05.
-
-
-        Estado actual	Evento	[Guard]	Próximo estado	Acciones
-        Idle (espera)	Botón presionado	Ticket no generado	TicketRequested	Generar ticket, registrar evento
-        TicketRequested	Ticket listo	—	TicketReady	Encender LED impresora
-        TicketReady	Botón liberado	Ticket generado correctamente	BarrierOpen	Abrir barrera
-        BarrierOpen	Tiempo de apertura	—	Idle	Apagar LED barrera, volver a espera
-                  
+    
